@@ -102,7 +102,7 @@ export default function About() {
             className="mb-32 mt-16 lg:mt-0"
           />
         </article>
-        <div className="mb-14 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-fit lg:basis-2/4">
+        <div className="mb-16 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-fit lg:basis-2/4">
           <Image
             src={andeilsonMemoji}
             alt="Andeilson Memoji | Party!"
