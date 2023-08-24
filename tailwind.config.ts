@@ -1,6 +1,8 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
+
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -24,7 +26,18 @@ const config: Config = {
         blue: 'rgba(63, 100, 234, 0.43)',
         red: 'rgba(233, 63, 64, 0.43)',
         yellow: 'rgba(255, 184, 0, 0.43)',
+
+        whitetheme: {
+          white: '#FBFBFB',
+          gray: {
+            100: '#F3F3F3',
+            200: '#F6F6F6',
+            300: '#EBEBEB',
+            400: '#7D7D7D',
+          },
+        },
       },
+
       fontFamily: {
         sans: 'var(--font-inter)',
       },
@@ -42,7 +55,7 @@ const config: Config = {
         '40': '2.5rem',
         '48': '3rem',
         '60': '3.75rem',
-        '80': '5rem',
+        '80': ['5rem', ''],
       },
     },
   },

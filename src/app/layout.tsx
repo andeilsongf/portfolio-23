@@ -1,8 +1,11 @@
-import Header from '@/components/Header'
 import './globals.css'
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+
+import MobileNavigation from '@/components/MobileNavigation'
+import Header from '@/components/Header'
+import Providers from './Providers'
 import Footer from '@/components/Footer'
+import { Metadata } from 'next'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,8 +14,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Andeilson Ferreira',
-  description: 'Brazilian Frontend Developer',
+  title: 'Andeilson Ferreira | Frontend Developer',
+  description:
+    'Andeilson Ferreira. Brazilian Frontend Developer based in Brasília, capital of Brazil. Works with React, React Native and Javascript.',
 }
 
 export default function RootLayout({
@@ -23,11 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} m-auto max-w-5xl overflow-x-hidden bg-black-100 font-sans`}
+        className={`${inter.variable} relative m-auto max-w-5xl overflow-x-hidden  font-sans`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          <MobileNavigation />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
