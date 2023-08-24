@@ -9,7 +9,7 @@ const Providers = ({ children }: ThemeProviderProps) => {
     <ThemeProvider
       disableTransitionOnChange
       enableSystem
-      defaultTheme="light"
+      defaultTheme="dark"
       attribute="class"
     >
       {children}
