@@ -27,9 +27,9 @@ export default function Home() {
             </div>
           </h1>
           <span className="max-w-[720px] text-16 font-medium text-gray-300 lg:text-24">
-            A front-end engineer and UI/UX designer helping startups turn their
-            visions into a digital reality. I specialize in designing and
-            building modern mobile and web-based apps.
+            A front-end engineer helping startups turn their visions into a
+            digital reality. I specialize in designing and building modern
+            mobile and web-based apps.
           </span>
 
           <div className="mt-10 gap-4 lg:flex lg:flex-row">

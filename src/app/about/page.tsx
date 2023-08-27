@@ -28,7 +28,7 @@ export default function About() {
           <p className="mb-8 text-18 text-whitetheme-gray-400 dark:text-gray-300">
             I&apos;m <span className="dark:text-white">Andeilson Ferreira</span>{' '}
             (Pronounced “An-dê-iu-som”) a multi-disciplinary front-end engineer
-            and UI/UX designer based in Brasília, Brazil 🇧🇷.
+            based in Brasília, Brazil 🇧🇷.
           </p>
           <h2 className="mb-2 text-16 font-bold uppercase text-black-200 dark:text-gray-200">
             What I Do
