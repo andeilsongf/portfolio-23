@@ -10,7 +10,6 @@ import TechStack from '../../public/static/images/andeilson-ferreira-tech-stack.
 import Link from 'next/link'
 import ProjectInfo from '@/components/ProjectInfo'
 import projectDATA from './projects/data'
-import { Metadata } from 'next'
 import ButtonContact from '@/components/Button'
 
 export default function Home() {
@@ -95,12 +94,14 @@ export default function Home() {
             alt="About me"
             description="Who I am and what I do"
             src={AndeilsonMemojiIdea}
+            link="/about"
           />
           <InformationCard
             title="TechStack"
             description="The dev tools, apps, devices, and games I use and play."
             src={TechStack}
             alt="TechStack"
+            link="/techstack"
             fitContent
             style={{
               borderRadius: 32,

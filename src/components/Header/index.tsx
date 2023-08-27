@@ -25,7 +25,9 @@ export default function Header() {
         <span className="absolute -left-0 -top-[120px] right-0 m-auto h-[263px] w-[600px] bg-red  blur-[120px] lg:flex" />
         <span className="absolute -top-[250px] left-[645px] h-[138px] w-[600px] bg-yellow  blur-[120px] lg:flex" />
       </div>
-      <div>{theme === 'dark' ? <LogoDark /> : <LogoWhite />}</div>
+      <Link href="/">
+        <div>{theme === 'dark' ? <LogoDark /> : <LogoWhite />}</div>
+      </Link>
 
       <div className="desktop hidden w-full items-center justify-between lg:flex">
         <nav className="ml-10 flex gap-4 text-16 font-medium text-black-200 dark:text-gray-100">

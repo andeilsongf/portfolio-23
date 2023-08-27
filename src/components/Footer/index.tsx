@@ -4,7 +4,6 @@ import NavLink from '@/app/nav-link'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logoSvg from '../../../public/static/images/logo.png'
 import { useTheme } from 'next-themes'
 import LogoDark from '../LogoDark'
 import LogoWhite from '../LogoWhite'
@@ -16,8 +15,9 @@ export default function Footer() {
     <footer className="relative flex flex-col-reverse justify-between gap-8 border-t border-white/10 px-4 py-[42px] lg:max-h-[330px] lg:flex-row lg:gap-0 lg:px-0">
       <div className="flex flex-col justify-between">
         <div className="z-20">
-          <Link href="/" />
-          <div>{theme === 'dark' ? <LogoDark /> : <LogoWhite />}</div>
+          <Link href="/">
+            <div>{theme === 'dark' ? <LogoDark /> : <LogoWhite />}</div>
+          </Link>
           <span className="text-14 text-black-200 dark:text-gray-200">
             Thanks for stopping by.
           </span>
